@@ -1,0 +1,22 @@
+# Excel MCP 統合サーバー用追加依存関係
+# 既存のFastAPI環境に追加するパッケージ
+
+# Excel操作用
+xlwings>=0.30.0
+
+# MCP サーバー用
+mcp>=1.0.0
+
+# Windows COM操作用（Windowsのみ）
+pywin32>=306
+
+# 以下は既存FastAPI環境に通常含まれているため、追加不要の場合が多い
+# fastapi>=0.100.0
+# uvicorn[standard]>=0.22.0
+# pydantic>=2.0.0
+
+# オプション: データ処理・可視化用（必要に応じて）
+# pandas>=2.0.0
+# numpy>=1.24.0
+# plotly>=5.15.0
+# matplotlib>=3.7.0

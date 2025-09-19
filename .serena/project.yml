@@ -1,0 +1,42 @@
+# language of the project (csharp, python, rust, java, typescript, go, cpp, or ruby)
+# 混合プロジェクト（Python + TypeScript）のため、メイン言語をpythonに変更
+language: python
+
+# whether to use the project's gitignore file to ignore files
+ignore_all_files_in_gitignore: true
+
+# list of additional paths to ignore
+# アーカイブディレクトリと一時ファイルを除外
+ignored_paths: 
+  - "archive/**"
+  - "samples/**"
+  - "*.pyc"
+  - "__pycache__/**"
+  - "insights_results/**"
+  - "*.log"
+
+# whether the project is in read-only mode
+read_only: false
+
+# 統合MCPサーバー用のツール除外設定なし（全ツール使用）
+excluded_tools: []
+
+# プロジェクト用初期プロンプト
+initial_prompt: |
+  このプロジェクトは「Serena洞察プラットフォーム」です。
+  
+  主要コンポーネント:
+  - src/unified-mcp-server.py: 統合MCPサーバー（ファイル操作・Excel・洞察管理）
+  - src/insight-engine.ts: TypeScript洞察分析エンジン
+  - src/insight-demo.ts: デモアプリケーション
+  
+  機能:
+  - データから自動洞察発見
+  - 季節性・トレンド・相関・異常値分析
+  - Excelファイル操作
+  - 洞察結果の永続化・管理
+  
+  archive/には旧バージョンのMCPサーバーが保存されています。
+
+# プロジェクト名を更新
+project_name: "serena-insight-platform"

@@ -1,0 +1,51 @@
+# Excel MCP + FastAPI 統合サーバー 完全版
+# 新規環境または完全な依存関係リスト
+
+# FastAPI 関連
+fastapi>=0.100.0
+uvicorn[standard]>=0.22.0
+pydantic>=2.0.0
+
+# Excel MCP 統合用
+xlwings>=0.30.0
+mcp>=1.0.0
+
+# Windows COM操作用（Windowsのみ）
+pywin32>=306; sys_platform == "win32"
+
+# データ処理用（オプション）
+pandas>=2.0.0
+numpy>=1.24.0
+
+# 可視化用（オプション）
+plotly>=5.15.0
+matplotlib>=3.7.0
+
+# HTTP クライアント用（オプション）
+httpx>=0.24.0
+requests>=2.31.0
+
+# 認証・セキュリティ用（将来拡張用）
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+python-multipart>=0.0.6
+
+# 設定管理用（オプション）
+python-dotenv>=1.0.0
+
+# ログ・モニタリング用（オプション）
+structlog>=23.1.0
+
+# バックグラウンドタスク用（将来拡張用）
+# celery>=5.3.0
+# redis>=4.6.0
+
+# 開発・テスト用（オプション）
+pytest>=7.4.0
+pytest-asyncio>=0.21.0
+black>=23.0.0
+isort>=5.12.0
+
+# ドキュメント生成用（オプション）
+# mkdocs>=1.5.0
+# mkdocs-material>=9.0.0
